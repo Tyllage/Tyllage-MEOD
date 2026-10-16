@@ -1,40 +1,38 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
+@import './styles/theme.css';
 
-  font: 18px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font: 18px/145% var(--font-sans);
+  color-scheme: light;
+  color: var(--color-text);
+  background: var(--color-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-  }
-}
-
+html,
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #root {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 h1 {
   font-weight: 500;
-  color: var(--text-h);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-primary-dark);
 }

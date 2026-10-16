@@ -1,0 +1,14 @@
+/*
+ * PLACEHOLDER colours until MEOD's real brand palette is confirmed.
+ */
+:root {
+  --color-primary: #3a7d44;
+  --color-primary-dark: #2a5c32;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f3f7f2;
+  --color-text: #2b2b26;
+  --color-text-muted: #5c5f58;
+  --color-border: #dfe6dc;
+
+  --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
