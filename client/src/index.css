@@ -5,7 +5,7 @@
 }
 
 :root {
-  font: 18px/145% var(--font-sans);
+  font: 18px/145% var(--font-body);
   color-scheme: light;
   color: var(--color-text);
   background: var(--color-bg);
@@ -29,10 +29,11 @@ body {
 }
 
 h1 {
-  font-weight: 500;
+  font-family: var(--font-heading);
+  font-weight: 400;
   color: var(--color-text);
 }
 
 a {
-  color: var(--color-primary-dark);
+  color: var(--color-forest);
 }

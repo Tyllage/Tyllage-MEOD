@@ -44,7 +44,7 @@ function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Shop MEOD Fresh
+            Our Store
           </a>
         </nav>
       </div>

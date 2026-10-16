@@ -10,10 +10,10 @@ export const site = {
 
 export const navLinks = [
   { label: 'About', path: '/about' },
-  { label: 'Produce', path: '/produce' },
+  { label: 'Our Produce', path: '/produce' },
   { label: 'Farm & More', path: '/farm-and-more' },
   { label: 'Experiences', path: '/experiences' },
-  { label: 'Find Us', path: '/find-us' },
+  { label: 'Contact Us', path: '/find-us' },
 ]
 
 export const footerLinks = [

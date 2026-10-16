@@ -1,14 +1,22 @@
 /*
- * PLACEHOLDER colours until MEOD's real brand palette is confirmed.
+ * MEOD Farm brand colours, confirmed from meod.com.sg.
  */
 :root {
-  --color-primary: #3a7d44;
-  --color-primary-dark: #2a5c32;
-  --color-bg: #ffffff;
-  --color-bg-alt: #f3f7f2;
-  --color-text: #2b2b26;
-  --color-text-muted: #5c5f58;
-  --color-border: #dfe6dc;
+  --color-forest: #054f12;
+  --color-dandelion: #e6b964;
+  --color-dandelion-dark: #c99a3d;
 
-  --font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f2f6f1;
+  --color-text: #1c2a1a;
+  --color-text-muted: #55614f;
+  --color-border: #d8e2d4;
+
+  /*
+   * Befalow (headings) and TT Commons (body) are MEOD's real brand fonts,
+   * but they're paid fonts we don't have licences for yet. Kaushan Script
+   * and Figtree are the free Google Fonts chosen as stand-ins until then.
+   */
+  --font-heading: 'Kaushan Script', cursive;
+  --font-body: 'Figtree', system-ui, 'Segoe UI', Roboto, sans-serif;
 }
