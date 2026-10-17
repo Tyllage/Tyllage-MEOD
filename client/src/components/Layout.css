@@ -8,6 +8,5 @@
 .layout-content {
   flex: 1;
   width: 100%;
-  padding-block: var(--section-padding);
   text-align: left;
 }

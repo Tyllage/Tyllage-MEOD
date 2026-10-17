@@ -2,13 +2,17 @@
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding-inline: var(--space-6);
+  padding-inline: var(--space-8);
 }
 
 @media (max-width: 480px) {
   .container {
     padding-inline: var(--space-4);
   }
+}
+
+.page {
+  padding-block: var(--section-padding);
 }
 
 .card {
