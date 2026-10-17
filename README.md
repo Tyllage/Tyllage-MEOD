@@ -1,7 +1,5 @@
 # Tyllage — MEOD Farm
 
-[![CI](https://github.com/Tyllage/Tyllage-MEOD/actions/workflows/ci.yml/badge.svg)](https://github.com/Tyllage/Tyllage-MEOD/actions/workflows/ci.yml)
-
 > **AI-powered sales, customer engagement and group-buy operations for MEOD Farm.**
 > Problem Statement 6B: *Improving Sales and Marketing Outreach Through AI* (Agriculture / AgriTech / eCommerce).
 
