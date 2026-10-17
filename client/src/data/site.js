@@ -8,6 +8,11 @@ export const site = {
   phone: '+65 8133 0358',
   hours: 'Mon–Sat, 10am–6pm',
   shopUrl: 'https://meodfresh.com/',
+  // From meodfresh.com — confirm with MEOD before launch
+  delivery: {
+    freeOver: '$60',
+    days: 'Tue, Thu & Sat',
+  },
 }
 
 export const navLinks = [

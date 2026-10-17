@@ -2,42 +2,18 @@ import { Link } from 'react-router-dom'
 import { site } from '../../data/site.js'
 import './WhatWeDo.css'
 
-const icons = {
-  leaf: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-      <path d="M5 20c7 0 14-7 14-15 0 0-14-1-14 9 0 3 1 5 2 6" />
-      <path d="M5 20c0-4 2-7 5-9" />
-    </svg>
-  ),
-  heart: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-      <path d="M12 20s-7-4.4-9.3-9A5 5 0 0 1 12 6a5 5 0 0 1 9.3 5c-2.3 4.6-9.3 9-9.3 9z" />
-    </svg>
-  ),
-  calendar: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-      <rect x="3" y="5" width="18" height="16" rx="2" />
-      <path d="M3 10h18M8 3v4M16 3v4" />
-    </svg>
-  ),
+const featuredCard = {
+  title: 'Fresh Produce',
+  image: '/images/fresh-produce.jpg',
+  alt: 'A hand holding freshly harvested purple lettuce in a MEOD greenhouse',
+  text: '100% pesticide-free vegetables, harvested early every morning for maximum freshness and nutrition.',
 }
 
-const cards = [
-  {
-    title: 'Fresh Produce',
-    image: '/images/fresh-produce.jpg',
-    alt: 'Freshly harvested leafy greens in crates at MEOD Farm',
-    icon: 'leaf',
-    text: '100% pesticide-free vegetables, harvested early every morning for maximum freshness and nutrition.',
-    linkLabel: 'Shop our greens',
-    href: site.shopUrl,
-    external: true,
-  },
+const secondaryCards = [
   {
     title: 'Farm & More',
     image: '/images/farm-and-more.jpg',
-    alt: 'MEOD Farm & More ready-to-eat products made from the harvest',
-    icon: 'heart',
+    alt: "Bowls of ready-to-eat MEOD products made from the farm's harvest",
     text: 'Ready-to-eat products made from our harvest that boost energy, health and overall wellness.',
     linkLabel: 'Explore products',
     href: '/farm-and-more',
@@ -45,8 +21,7 @@ const cards = [
   {
     title: 'Experiences',
     image: '/images/experiences.jpg',
-    alt: 'Visitors on a guided tour through the greenhouses at MEOD Farm',
-    icon: 'calendar',
+    alt: 'A MEOD farmer tending tall rows of greens inside the greenhouse',
     text: 'Farm tours and workshops — see, touch and taste where your food grows.',
     linkLabel: 'Plan a visit',
     href: '/experiences',
@@ -67,9 +42,42 @@ function WhatWeDo() {
         </div>
 
         <div className="whatwedo-grid">
-          {cards.map((card) => {
-            const content = (
-              <>
+          <a
+            className="card whatwedo-card whatwedo-card--featured"
+            href={site.shopUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="whatwedo-card-image"
+              src={featuredCard.image}
+              alt={featuredCard.alt}
+              loading="lazy"
+            />
+            <div className="whatwedo-card-body">
+              <h3 className="whatwedo-card-title">{featuredCard.title}</h3>
+              <p className="whatwedo-card-text">{featuredCard.text}</p>
+              <div className="whatwedo-tags">
+                <span className="whatwedo-tag">
+                  Free delivery over {site.delivery.freeOver}
+                </span>
+                <span className="whatwedo-tag">
+                  Delivery {site.delivery.days}
+                </span>
+              </div>
+              <span className="btn btn-primary whatwedo-card-cta">
+                Shop our greens
+              </span>
+            </div>
+          </a>
+
+          <div className="whatwedo-secondary">
+            {secondaryCards.map((card) => (
+              <Link
+                key={card.title}
+                className="card whatwedo-card whatwedo-card--horizontal"
+                to={card.href}
+              >
                 <img
                   className="whatwedo-card-image"
                   src={card.image}
@@ -77,34 +85,15 @@ function WhatWeDo() {
                   loading="lazy"
                 />
                 <div className="whatwedo-card-body">
-                  <span className="whatwedo-icon">{icons[card.icon]}</span>
                   <h3 className="whatwedo-card-title">{card.title}</h3>
                   <p className="whatwedo-card-text">{card.text}</p>
-                  <span className="whatwedo-card-link">{card.linkLabel} →</span>
+                  <span className="whatwedo-card-link">
+                    {card.linkLabel} <span className="whatwedo-arrow">→</span>
+                  </span>
                 </div>
-              </>
-            )
-
-            if (card.external) {
-              return (
-                <a
-                  key={card.title}
-                  className="card whatwedo-card"
-                  href={card.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {content}
-                </a>
-              )
-            }
-
-            return (
-              <Link key={card.title} className="card whatwedo-card" to={card.href}>
-                {content}
               </Link>
-            )
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>
