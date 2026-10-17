@@ -1,10 +1,7 @@
+import Hero from '../components/home/Hero.jsx'
+
 function Home() {
-  return (
-    <>
-      <h1>Home</h1>
-      <p>Welcome to MEOD Farm — content coming soon.</p>
-    </>
-  )
+  return <Hero />
 }
 
 export default Home

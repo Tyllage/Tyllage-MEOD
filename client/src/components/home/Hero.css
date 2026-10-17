@@ -1,0 +1,133 @@
+.hero {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: calc(-1 * var(--section-padding));
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-forest) 80%, transparent) 0%,
+    color-mix(in srgb, var(--color-forest) 55%, transparent) 45%,
+    color-mix(in srgb, var(--color-forest) 88%, transparent) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding-block: var(--space-8);
+}
+
+.hero-eyebrow {
+  margin: 0;
+  color: var(--color-dandelion);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.hero-heading {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(2.25rem, 2rem + 2vw, 3.75rem);
+  color: #fff;
+  max-width: 20ch;
+}
+
+.hero-description {
+  margin: 0;
+  max-width: 48ch;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.hero-btn-outline {
+  color: #fff;
+  border-color: #fff;
+}
+
+.hero-btn-outline:hover {
+  background: color-mix(in srgb, #fff 20%, transparent);
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin: var(--space-2) 0 0;
+  padding: 0;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.hero-stat dt {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dandelion);
+}
+
+.hero-stat dd {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero-content {
+    padding-block: var(--space-7);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: var(--space-5);
+  }
+}
