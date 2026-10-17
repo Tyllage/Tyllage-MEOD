@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # ---- Build the React + Vite client ----
-FROM node:22-alpine AS build
+FROM node:25-alpine AS build
 WORKDIR /app
 
 COPY client/package.json client/package-lock.json ./
@@ -12,7 +12,7 @@ RUN npm run build
 
 # ---- Serve the static build ----
 # Temporary: replace this stage with the Express app once server/ exists.
-FROM node:22-alpine
+FROM node:25-alpine
 WORKDIR /app
 
 RUN npm install -g serve@14 --no-audit --no-fund
