@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Tyllage/Tyllage-MEOD/security/advisories/new
+    about: Report vulnerabilities or exposed data privately. Please don't open a public issue.
+  - name: MEOD Fresh store (customer orders)
+    url: https://meodfresh.com/
+    about: For MEOD product or order questions, contact MEOD directly.

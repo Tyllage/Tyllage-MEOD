@@ -1,0 +1,34 @@
+# Local production-like preview of the MEOD Farm site.
+#   docker compose up --build            -> http://localhost:8080
+#   docker compose --profile db up       -> also starts PostgreSQL (for the future API)
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      PORT: 8080
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    profiles: ["db"]
+    environment:
+      POSTGRES_USER: tyllage
+      POSTGRES_PASSWORD: tyllage_local_only
+      POSTGRES_DB: tyllage_meod
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tyllage -d tyllage_meod"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
