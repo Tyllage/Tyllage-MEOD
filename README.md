@@ -111,7 +111,6 @@ Future backend variables (`DATABASE_URL`, `SHOPIFY_*`, `WHATSAPP_*`, `OPENAI_*`,
 | [Product Specification](docs/PRODUCT_SPECIFICATION.md) | Roles, modules, acceptance stories, data model, non-functional requirements |
 | [Deployment Plan](docs/DEPLOYMENT_PLAN.md) | Infrastructure, setup steps, release gates, rollout schedule |
 | [Industry Research](docs/INDUSTRY_RESEARCH.md) | MEOD sales channels, WhatsApp/OpenAI feasibility, unknowns |
-| [Funding Breakdown](docs/FUNDING.md) | S$5,000 six-month pilot envelope |
 | [Audit](AUDIT.md) | Current repo status against plan and release gates |
 
 ## Contributing
