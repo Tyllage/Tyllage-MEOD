@@ -22,3 +22,8 @@ export const footerLinks = [
   { label: 'Careers', path: '/careers' },
   { label: 'Privacy', path: '/privacy' },
 ]
+
+export const socials = [
+  { label: 'Instagram', url: 'https://www.instagram.com/meodfarm/' },
+  { label: 'Facebook', url: 'https://www.facebook.com/MeodFarm/' },
+]
