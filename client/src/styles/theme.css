@@ -1,0 +1,22 @@
+/*
+ * MEOD Farm brand colours, confirmed from meod.com.sg.
+ */
+:root {
+  --color-forest: #054f12;
+  --color-dandelion: #e6b964;
+  --color-dandelion-dark: #c99a3d;
+
+  --color-bg: #ffffff;
+  --color-bg-alt: #f2f6f1;
+  --color-text: #1c2a1a;
+  --color-text-muted: #55614f;
+  --color-border: #d8e2d4;
+
+  /*
+   * Befalow (headings) and TT Commons (body) are MEOD's real brand fonts,
+   * but they're paid fonts we don't have licences for yet. Kaushan Script
+   * and Figtree are the free Google Fonts chosen as stand-ins until then.
+   */
+  --font-heading: 'Kaushan Script', cursive;
+  --font-body: 'Figtree', system-ui, 'Segoe UI', Roboto, sans-serif;
+}
