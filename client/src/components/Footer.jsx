@@ -22,7 +22,7 @@ const currentYear = new Date().getFullYear()
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-inner">
+      <div className="footer-inner container">
         <div className="footer-brand">
           <p className="footer-name">{site.name}</p>
           <p className="footer-tagline">{site.tagline}</p>
@@ -38,20 +38,27 @@ function Footer() {
 
         <div className="footer-contact">
           <p>{site.address}</p>
-          <p>{site.email}</p>
-          <p>WhatsApp: {site.whatsapp}</p>
+          <p>
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+          </p>
+          <p>
+            Phone: <a href={`tel:${site.phone.replace(/\s+/g, '')}`}>{site.phone}</a>
+          </p>
           <p>{site.hours}</p>
         </div>
       </div>
 
-      <div className="footer-divider-wrap">
+      <div className="container">
         <hr className="footer-divider" />
       </div>
 
-      <div className="footer-bottom">
-        <p className="footer-copyright">
-          © {currentYear} {site.name}. All rights reserved.
-        </p>
+      <div className="footer-bottom container">
+        <div className="footer-meta">
+          <p className="footer-copyright">
+            © {currentYear} {site.companyName}. All rights reserved.
+          </p>
+          <p className="footer-uen">UEN: {site.uen}</p>
+        </div>
 
         <div className="footer-social">
           {socials.map((social) => (

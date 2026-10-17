@@ -54,7 +54,9 @@ The current meod.com.sg mixes too many fonts, has misaligned layouts (e.g. the F
 7. WhatsApp community
 8. Come visit us
 
-## 7. Known gaps vs. current code
+## 7. Current foundations (done)
 
-- `theme.css` currently defines only `--color-forest`, `--color-dandelion`, `--color-dandelion-dark`, `--color-bg`, `--color-bg-alt`, `--color-text`, `--color-text-muted`, `--color-border`, `--font-heading`, `--font-body`. It has **no spacing scale, no `--color-sky`, no `--color-sand`, no max-content-width variable, and no card style** yet — these are the first things to add before building sections.
-- Existing pages (`Navbar`, `Footer`, `Layout`) and nav structure (`client/src/data/site.js`) are the starting point; no homepage sections exist yet.
+- `theme.css` now defines the full palette (`--color-forest`, `--color-dandelion`, `--color-dandelion-dark`, `--color-sky`, `--color-sand`, plus the neutral/background/text tokens), a spacing scale `--space-1` (4px) through `--space-8` (40px), `--section-padding`, `--max-width` (1100px) and `--radius` (12px).
+- `client/src/styles/shared.css` (imported from `index.css`) holds the reusable primitives: `.container` (centred, `--max-width`, side padding `--space-6`, dropping to `--space-4`/16px at ≤480px), `.card`, and `.btn` with `.btn-primary` (dandelion/forest, dandelion-dark hover) and `.btn-outline` (forest border/text) variants.
+- `Navbar`, `Footer` and `Layout` use `.container` instead of their own hard-coded max-width/padding, and the navbar's "Our Store" link uses `.btn .btn-primary`. No homepage sections exist yet — building them is the next step and should reuse `.container`, `.card` and `.btn-*` rather than introducing new spacing or radius values.
+- `client/src/data/site.js` now matches the real meod.com.sg footer details: `companyName`, `uen`, corrected `tagline`/`address`/`email`, and `phone` (replacing the old `whatsapp` field). The footer shows a mailto email, a tel phone link, and "© {year} {companyName}. All rights reserved." beside "UEN: {uen}".

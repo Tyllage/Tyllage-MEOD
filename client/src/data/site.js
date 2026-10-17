@@ -1,9 +1,11 @@
 export const site = {
   name: 'MEOD Farm',
-  tagline: "Singapore's largest urban farm",
-  address: '13 Neo Tiew Harvest Lane, Singapore 719837',
-  email: 'info@meod.sg',
-  whatsapp: '+65 8034 7194',
+  companyName: 'Meod Pte. Ltd.',
+  uen: '201418240G',
+  tagline: "Singapore's largest by-land urban farm",
+  address: '13 Neo Tiew Harvest Lane, Singapore 719838',
+  email: 'info@meod.com.sg',
+  phone: '+65 8133 0358',
   hours: 'Mon–Sat, 10am–6pm',
   shopUrl: 'https://meodfresh.com/',
 }

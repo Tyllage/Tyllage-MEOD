@@ -4,13 +4,11 @@
 }
 
 .navbar-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0.75rem 1.25rem;
+  padding-block: var(--space-3);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 .navbar-logo {
@@ -24,7 +22,7 @@
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: var(--space-5);
 }
 
 .navbar-link {
@@ -39,29 +37,14 @@
   font-weight: 600;
 }
 
-.navbar-cta {
-  background: var(--color-dandelion);
-  color: var(--color-forest);
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.navbar-cta:hover {
-  background: var(--color-dandelion-dark);
-}
-
 .navbar-toggle {
   display: none;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--space-1);
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.4rem;
+  padding: var(--space-2);
 }
 
 .navbar-toggle span {
@@ -87,7 +70,7 @@
     gap: 0;
     background: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
-    padding: 0.5rem 1.25rem 1rem;
+    padding: var(--space-2) var(--space-6) var(--space-4);
   }
 
   .navbar-links.open {
@@ -98,15 +81,13 @@
     position: relative;
   }
 
-  .navbar-link,
-  .navbar-cta {
+  .navbar-link {
     width: 100%;
-    padding: 0.6rem 0;
+    padding-block: var(--space-3);
   }
 
   .navbar-cta {
-    margin-top: 0.5rem;
-    text-align: center;
-    border-radius: 8px;
+    width: 100%;
+    margin-top: var(--space-2);
   }
 }

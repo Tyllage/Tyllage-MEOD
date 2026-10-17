@@ -5,6 +5,8 @@
   --color-forest: #054f12;
   --color-dandelion: #e6b964;
   --color-dandelion-dark: #c99a3d;
+  --color-sky: #326383;
+  --color-sand: #e2dbd3;
 
   --color-bg: #ffffff;
   --color-bg-alt: #f2f6f1;
@@ -19,4 +21,18 @@
    */
   --font-heading: 'Kaushan Script', cursive;
   --font-body: 'Figtree', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing scale: one set of gaps reused by every section and component. */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --section-padding: var(--space-8);
+
+  --max-width: 1100px;
+  --radius: 12px;
 }

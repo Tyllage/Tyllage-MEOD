@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <header className="navbar">
-      <div className="navbar-inner">
+      <div className="navbar-inner container">
         <NavLink to="/" className="navbar-logo" onClick={() => setOpen(false)}>
           {site.name}
         </NavLink>
@@ -39,7 +39,7 @@ function Navbar() {
             </NavLink>
           ))}
           <a
-            className="navbar-cta"
+            className="btn btn-primary navbar-cta"
             href={site.shopUrl}
             target="_blank"
             rel="noopener noreferrer"
