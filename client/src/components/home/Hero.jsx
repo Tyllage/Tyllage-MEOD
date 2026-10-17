@@ -53,6 +53,18 @@ function Hero() {
           ))}
         </dl>
       </div>
+
+      <svg
+        className="hero-wave"
+        viewBox="0 0 1440 100"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0,40 Q720,100 1440,40 L1440,100 L0,100 Z"
+          style={{ fill: 'var(--color-bg)' }}
+        />
+      </svg>
     </section>
   )
 }

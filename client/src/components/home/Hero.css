@@ -86,8 +86,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-6);
-  margin: 0;
+  margin: var(--space-6) 0 0;
   padding: 0;
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 2;
+  display: block;
 }
 
 .hero-stat {
@@ -137,6 +147,7 @@
 
   .hero-stats {
     gap: var(--space-4);
+    margin-top: var(--space-4);
   }
 
   .hero-stat {
@@ -146,5 +157,9 @@
 
   .hero-stat dt {
     font-size: 1.5rem;
+  }
+
+  .hero-wave {
+    height: 40px;
   }
 }
