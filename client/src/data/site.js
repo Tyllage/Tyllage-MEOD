@@ -2,6 +2,7 @@ export const site = {
   name: 'MEOD Farm',
   companyName: 'Meod Pte. Ltd.',
   uen: '201418240G',
+  slogan: 'Safe, fresh and sustainable.',
   tagline: "Singapore's largest by-land urban farm",
   address: '13 Neo Tiew Harvest Lane, Singapore 719838',
   email: 'info@meod.com.sg',
