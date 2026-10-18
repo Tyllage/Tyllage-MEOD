@@ -108,11 +108,6 @@
   height: 22px;
 }
 
-/*
- * Keep the social icons clear of the floating WhatsApp / back-to-top buttons
- * (20px offset + 56px button + 20px gap). Above ~1400px the centred container
- * already leaves enough room.
- */
 @media (min-width: 481px) and (max-width: 1400px) {
   .footer-bottom {
     padding-right: 96px;
