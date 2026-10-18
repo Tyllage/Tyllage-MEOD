@@ -12,11 +12,17 @@
 }
 
 .navbar-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-forest);
-  text-decoration: none;
-  white-space: nowrap;
+  display: block;
+  flex-shrink: 0;
+}
+
+.navbar-logo-mark {
+  display: block;
+  width: 127px;
+  height: 36px;
+  background-color: var(--color-forest);
+  -webkit-mask: url('/images/meod-light.svg') left center / contain no-repeat;
+  mask: url('/images/meod-light.svg') left center / contain no-repeat;
 }
 
 .navbar-links {
