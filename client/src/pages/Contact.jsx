@@ -1,4 +1,4 @@
-function FindUs() {
+function Contact() {
   return (
     <div className="container page">
       <h1>Contact Us</h1>
@@ -7,4 +7,4 @@ function FindUs() {
   )
 }
 
-export default FindUs
+export default Contact

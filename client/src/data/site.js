@@ -22,7 +22,7 @@ export const navLinks = [
   { label: 'Our Produce', path: '/produce' },
   { label: 'Farm & More', path: '/farm-and-more' },
   { label: 'Experiences', path: '/experiences' },
-  { label: 'Contact Us', path: '/find-us' },
+  { label: 'Contact Us', path: '/contact' },
 ]
 
 export const footerLinks = [
