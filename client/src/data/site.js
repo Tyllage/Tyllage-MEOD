@@ -1,6 +1,6 @@
 export const site = {
   name: 'MEOD Farm',
-  companyName: 'Meod Pte. Ltd.',
+  companyName: 'Meod Pte. Ltd',
   uen: '201418240G',
   slogan: 'Safe, fresh and sustainable.',
   tagline: "Singapore's largest by-land urban farm",
