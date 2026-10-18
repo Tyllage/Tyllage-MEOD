@@ -1,0 +1,87 @@
+.floating-actions {
+  position: fixed;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.floating-btn {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.floating-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+.floating-btn:hover {
+  transform: translateY(-2px);
+}
+
+.floating-btn:focus-visible {
+  outline: 3px solid var(--color-dandelion);
+  outline-offset: 3px;
+}
+
+.floating-btn--whatsapp {
+  background: #25d366;
+}
+
+.floating-btn--top {
+  width: 44px;
+  height: 44px;
+  background: var(--color-forest);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+}
+
+.floating-btn--top svg {
+  width: 20px;
+  height: 20px;
+}
+
+.floating-btn--top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.floating-btn--top.is-visible:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .floating-actions {
+    right: var(--space-4);
+    bottom: var(--space-4);
+  }
+
+  .floating-btn--whatsapp {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-btn {
+    transition: none;
+  }
+}
