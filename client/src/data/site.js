@@ -10,7 +10,11 @@ export const site = {
   hours: 'Mon–Sat, 10am–6pm',
   shopUrl: 'https://meodfresh.com/',
   whatsappMessage: "Hi MEOD Farm, I'd like to find out more.",
-  // From meodfresh.com — confirm with MEOD before launch
+  experienceEmail: 'experience@meod.com.sg',
+  visiting: [
+    { label: 'General Visitation', value: 'By Appointment Only' },
+    { label: 'Farm Marketplace', value: 'By Appointment Only' },
+  ],
   delivery: {
     freeOver: '$60',
     days: 'Tue, Thu & Sat',
@@ -36,3 +40,7 @@ export const socials = [
   { label: 'Instagram', url: 'https://www.instagram.com/meodfarm/' },
   { label: 'Facebook', url: 'https://www.facebook.com/MeodFarm/' },
 ]
+
+export const whatsappUrl = `https://wa.me/${site.phone.replace(/\D/g, '')}?text=${encodeURIComponent(
+  site.whatsappMessage,
+)}`

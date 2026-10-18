@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react'
-import { site } from '../data/site.js'
+import { whatsappUrl } from '../data/site.js'
 import './FloatingActions.css'
-
-const whatsappUrl = `https://wa.me/${site.phone.replace(/\D/g, '')}?text=${encodeURIComponent(
-  site.whatsappMessage,
-)}`
 
 const SHOW_AFTER_PX = 400
 

@@ -1,10 +1,7 @@
+import ContactSection from '../components/contact/ContactSection.jsx'
+
 function Contact() {
-  return (
-    <div className="container page">
-      <h1>Contact Us</h1>
-      <p>Directions and a map are coming soon.</p>
-    </div>
-  )
+  return <ContactSection />
 }
 
 export default Contact
