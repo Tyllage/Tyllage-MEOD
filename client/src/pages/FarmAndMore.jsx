@@ -1,9 +1,13 @@
 import PageHero from '../components/PageHero.jsx'
 import OurProducts from '../components/farm/OurProducts.jsx'
+import GelatoFeature from '../components/farm/GelatoFeature.jsx'
+import GelatoVsIceCream from '../components/farm/GelatoVsIceCream.jsx'
+import FarmShopCta from '../components/farm/FarmShopCta.jsx'
+import './FarmAndMore.css'
 
 function FarmAndMore() {
   return (
-    <>
+    <div className="farm-page">
       <PageHero
         eyebrow="Farm & More"
         title="Eating well begins here"
@@ -25,7 +29,10 @@ function FarmAndMore() {
       </section>
 
       <OurProducts />
-    </>
+      <GelatoFeature />
+      <GelatoVsIceCream />
+      <FarmShopCta />
+    </div>
   )
 }
 

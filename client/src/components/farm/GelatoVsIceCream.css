@@ -1,0 +1,174 @@
+.gelato-vs {
+  background: color-mix(in srgb, var(--color-dandelion) 35%, #fff);
+  padding-block: 0 var(--section-padding);
+}
+
+.gelato-vs > .container {
+  padding-top: var(--section-padding);
+  border-top: 1px solid color-mix(in srgb, var(--color-forest) 15%, transparent);
+}
+
+.gelato-vs-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin-top: 56px;
+}
+
+.gelato-vs-table-wrap {
+  width: 100%;
+  max-width: 780px;
+  overflow-x: auto;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.gelato-vs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg);
+  font-size: 0.95rem;
+}
+
+.gelato-vs-table th,
+.gelato-vs-table td {
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.gelato-vs-table thead th {
+  background: var(--color-forest);
+  color: #fff;
+  font-weight: 700;
+}
+
+.gelato-vs-table tbody th {
+  text-align: left;
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+.gelato-vs-table tbody tr:nth-child(even) {
+  background: var(--color-bg-alt);
+}
+
+.gelato-vs-table td {
+  color: var(--color-text-muted);
+}
+
+.gelato-vs-table td.gelato-vs-win {
+  color: var(--color-forest);
+  font-weight: 700;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.gelato-vs-reasons {
+  width: 100%;
+  text-align: center;
+}
+
+.gelato-vs-choose {
+  margin: 0;
+  color: var(--color-forest);
+  font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem);
+  font-weight: 700;
+}
+
+.gelato-vs-answer {
+  margin: var(--space-2) 0 0;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+.gelato-vs-answer strong {
+  color: var(--color-forest);
+}
+
+.gelato-vs-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gelato-vs-reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-7) var(--space-6);
+  background: var(--color-bg);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.gelato-vs-icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--color-forest);
+  color: var(--color-dandelion);
+}
+
+.gelato-vs-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.gelato-vs-reason-title {
+  margin: 0 0 var(--space-2);
+  color: var(--color-forest);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.gelato-vs-reason-text {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.gelato-vs-quote {
+  max-width: 34ch;
+  margin: 112px auto 0;
+  text-align: center;
+  font-family: var(--font-heading);
+  color: var(--color-forest);
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  line-height: 1.35;
+}
+
+@media (max-width: 900px) {
+  .gelato-vs-grid {
+    gap: 56px;
+  }
+
+  .gelato-vs-list {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .gelato-vs-table th,
+  .gelato-vs-table td {
+    padding: var(--space-3);
+    font-size: 0.85rem;
+  }
+}

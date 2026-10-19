@@ -4,7 +4,7 @@
 }
 
 .farm-products-grid {
-  margin: var(--space-8) 0 0;
+  margin: 56px 0 0;
   padding: 0;
   list-style: none;
   display: grid;
@@ -67,12 +67,8 @@
 }
 
 @media (max-width: 720px) {
-  .farm-products {
-    padding-block: var(--space-7);
-  }
-
   .farm-products-grid {
     grid-template-columns: 1fr;
-    margin-top: var(--space-6);
+    margin-top: var(--space-7);
   }
 }
