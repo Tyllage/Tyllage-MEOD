@@ -31,86 +31,110 @@ const icons = {
       <path d="M3 7l9 6 9-6" />
     </svg>
   ),
-  external: (
+  directions: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="6" cy="19" r="2" />
+      <circle cx="18" cy="5" r="2" />
+      <path d="M8 19h7.5a3.5 3.5 0 0 0 0-7h-7a3.5 3.5 0 0 1 0-7H16" />
+    </svg>
+  ),
+  arrow: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
+      <path d="M5 12h14M13 6l6 6-6 6" />
     </svg>
   ),
 }
 
+const actions = [
+  {
+    key: 'whatsapp',
+    title: 'Chat on WhatsApp',
+    detail: site.phone,
+    href: whatsappUrl,
+    external: true,
+    primary: true,
+  },
+  {
+    key: 'email',
+    title: 'Email us',
+    detail: site.email,
+    href: `mailto:${site.email}`,
+  },
+  {
+    key: 'directions',
+    title: 'Get directions',
+    detail: 'Open in Google Maps',
+    href: directionsUrl,
+    external: true,
+  },
+]
+
 function ContactSection() {
   return (
     <section className="contact">
-      <div className="container contact-grid">
-        <div className="contact-map">
-          <iframe
-            title={`Map showing ${site.name} at ${site.address}`}
-            src={mapEmbedUrl}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
-        </div>
+      <div className="container">
+        <div className="contact-grid">
+          <div className="contact-details">
+            <h2 className="contact-title">The Farm</h2>
 
-        <div className="contact-details">
-          <h1 className="contact-title">The Farm</h1>
-
-          <ul className="contact-list">
-            <li className="contact-item">
+            <div className="contact-block">
               <span className="contact-icon">{icons.address}</span>
               <div>
-                <h2 className="contact-label">Address</h2>
-                <p>{street}</p>
-                <p>{postal}</p>
-                <a
-                  className="contact-directions"
-                  href={directionsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Get directions {icons.external}
-                </a>
+                <h3 className="contact-label">Address</h3>
+                <p>
+                  {street}
+                  <br />
+                  {postal}
+                </p>
               </div>
-            </li>
+            </div>
 
-            <li className="contact-item">
+            <div className="contact-block">
               <span className="contact-icon contact-icon--accent">{icons.visit}</span>
               <div>
-                <h2 className="contact-label">How To Visit</h2>
-                {site.visiting.map((item) => (
-                  <p key={item.label}>
-                    {item.label}: {item.value}
-                  </p>
-                ))}
-                <p>
-                  Organized Tour Enquiries:{' '}
+                <h3 className="contact-label">How to visit</h3>
+                <ul className="contact-visiting">
+                  {site.visiting.map((item) => (
+                    <li key={item.label}>
+                      {item.label}: <strong>{item.value.toLowerCase()}</strong>
+                    </li>
+                  ))}
+                </ul>
+                <p className="contact-note">
+                  Organised tours:{' '}
                   <a href={`mailto:${site.experienceEmail}`}>{site.experienceEmail}</a>
                 </p>
               </div>
-            </li>
+            </div>
+          </div>
 
-            <li className="contact-item">
-              <span className="contact-icon">{icons.whatsapp}</span>
-              <div>
-                <h2 className="contact-label">WhatsApp</h2>
-                <p>
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                    {site.phone}
-                  </a>
-                </p>
-              </div>
-            </li>
+          <div className="contact-map">
+            <iframe
+              title={`Map showing ${site.name} at ${site.address}`}
+              src={mapEmbedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
+        </div>
 
-            <li className="contact-item">
-              <span className="contact-icon">{icons.email}</span>
-              <div>
-                <h2 className="contact-label">Email</h2>
-                <p>
-                  <a href={`mailto:${site.email}`}>{site.email}</a>
-                </p>
-              </div>
-            </li>
-          </ul>
+        <div className="contact-actions">
+          {actions.map((action) => (
+            <a
+              key={action.key}
+              className={`contact-action${action.primary ? ' contact-action--primary' : ''}`}
+              href={action.href}
+              {...(action.external && { target: '_blank', rel: 'noopener noreferrer' })}
+            >
+              <span className="contact-action-icon">{icons[action.key]}</span>
+              <span className="contact-action-text">
+                <span className="contact-action-title">{action.title}</span>
+                <span className="contact-action-detail">{action.detail}</span>
+              </span>
+              <span className="contact-action-arrow">{icons.arrow}</span>
+            </a>
+          ))}
         </div>
       </div>
     </section>
