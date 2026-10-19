@@ -11,6 +11,17 @@ function FarmAndMore() {
         imageAlt="Jars of fresh basil pesto, rice crackers and fresh produce on a rustic table"
         imagePosition="center 35%"
       />
+
+      <section className="container page">
+        <p className="section-eyebrow">Farm-to-Wellness</p>
+        <h2 className="section-title">Choosing to eat right</h2>
+        <p className="section-intro">
+          We are inspired by a single ideology — food should be safe and good health starts from
+          the source of creation. We work with partners who share our ethos in curating
+          exceptional products which are made from pure and good quality ingredients that
+          support good health and vitality.
+        </p>
+      </section>
     </>
   )
 }
