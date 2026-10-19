@@ -1,0 +1,112 @@
+.wheretobuy {
+  background: var(--color-sky);
+  padding-block: var(--section-padding);
+}
+
+.wheretobuy .section-eyebrow,
+.wheretobuy .section-title,
+.wheretobuy .section-intro {
+  color: #fff;
+}
+
+.wheretobuy-grid {
+  margin-top: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  align-items: stretch;
+}
+
+.wheretobuy-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  color: var(--color-text);
+  border-top: 4px solid transparent;
+}
+
+.wheretobuy-card--featured {
+  border-top-color: var(--color-dandelion);
+}
+
+.wheretobuy-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  border-radius: 999px;
+  background: var(--color-dandelion);
+  color: var(--color-forest);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.wheretobuy-card-title {
+  margin: 0;
+  color: var(--color-forest);
+  font-size: 1.15rem;
+}
+
+.wheretobuy-card-text {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.wheretobuy-card-cta,
+.wheretobuy-note {
+  margin-top: auto;
+  padding-top: var(--space-2);
+}
+
+.wheretobuy-note {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.wheretobuy-note svg {
+  width: var(--space-5);
+  height: var(--space-5);
+  color: var(--color-forest);
+  flex-shrink: 0;
+}
+
+.wheretobuy-footer {
+  margin: var(--space-8) 0 0;
+  text-align: center;
+}
+
+.wheretobuy-contact {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.wheretobuy-contact:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 860px) {
+  .wheretobuy-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .wheretobuy {
+    padding-block: var(--space-7);
+  }
+
+  .wheretobuy-grid {
+    margin-top: var(--space-6);
+  }
+
+  .wheretobuy-footer {
+    margin-top: var(--space-6);
+  }
+}
