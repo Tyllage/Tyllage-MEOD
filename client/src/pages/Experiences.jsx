@@ -1,4 +1,6 @@
 import PageHero from '../components/PageHero.jsx'
+import ExperienceIntro from '../components/experiences/ExperienceIntro.jsx'
+import BookingSection from '../components/experiences/BookingSection.jsx'
 
 function Experiences() {
   return (
@@ -11,6 +13,8 @@ function Experiences() {
         imageAlt="A ladybird resting on a green leaf"
         imagePosition="center 50%"
       />
+      <ExperienceIntro />
+      <BookingSection />
     </>
   )
 }
