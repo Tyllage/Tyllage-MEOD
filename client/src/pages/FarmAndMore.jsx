@@ -1,4 +1,5 @@
 import PageHero from '../components/PageHero.jsx'
+import OurProducts from '../components/farm/OurProducts.jsx'
 
 function FarmAndMore() {
   return (
@@ -22,6 +23,8 @@ function FarmAndMore() {
           support good health and vitality.
         </p>
       </section>
+
+      <OurProducts />
     </>
   )
 }
