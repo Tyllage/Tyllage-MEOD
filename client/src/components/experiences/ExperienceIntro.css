@@ -117,7 +117,7 @@
 
   .exp-intro-media {
     aspect-ratio: 16 / 10;
-    max-height: none;
+    max-height: 440px;
   }
 
   .exp-intro-media::before {
@@ -125,10 +125,23 @@
   }
 
   .exp-intro-media img {
-    object-position: center 45%;
+    object-position: center 35%;
   }
 
+  .exp-highlight {
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-5);
+  }
+}
+
+@media (max-width: 720px) {
   .exp-highlights {
     grid-template-columns: 1fr;
+  }
+
+  .exp-highlight {
+    flex-direction: row;
+    gap: var(--space-4);
   }
 }
