@@ -15,6 +15,7 @@ export const site = {
     { label: 'General Visitation', value: 'By Appointment Only' },
     { label: 'Farm Marketplace', value: 'By Appointment Only' },
   ],
+  // From meodfresh.com — confirm with MEOD before launch
   delivery: {
     freeOver: '$60',
     days: 'Tue, Thu & Sat',
