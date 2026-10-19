@@ -33,8 +33,8 @@ function WhatWeDo() {
     <section className="whatwedo">
       <div className="container">
         <div className="whatwedo-header">
-          <h2 className="whatwedo-title">What We Do</h2>
-          <p className="whatwedo-intro">
+          <h2 className="section-title">What We Do</h2>
+          <p className="section-intro">
             From nurturing a seed to becoming your leafy dinner, we put
             nature&rsquo;s best into every harvest — not just fibre, but
             vitamins, minerals and antioxidants your body needs.
