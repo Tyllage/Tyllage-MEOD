@@ -108,6 +108,12 @@
   height: 22px;
 }
 
+@media (min-width: 481px) and (max-width: 1400px) {
+  .footer-bottom {
+    padding-right: 96px;
+  }
+}
+
 @media (max-width: 480px) {
   .footer-bottom {
     flex-direction: column;
