@@ -9,8 +9,13 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-inner container">
-        <NavLink to="/" className="navbar-logo" onClick={() => setOpen(false)}>
-          {site.name}
+        <NavLink
+          to="/"
+          className="navbar-logo"
+          aria-label={`${site.name} home`}
+          onClick={() => setOpen(false)}
+        >
+          <span className="navbar-logo-mark" aria-hidden="true" />
         </NavLink>
 
         <button

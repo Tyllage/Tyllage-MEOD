@@ -1,0 +1,226 @@
+.contact {
+  padding-block: var(--section-padding) calc(var(--section-padding) * 1.5);
+}
+
+.contact-actions {
+  margin-top: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.contact-action {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-6);
+  border-radius: var(--radius);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  color: var(--color-forest);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-action:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px color-mix(in srgb, var(--color-forest) 15%, transparent);
+}
+
+.contact-action--primary {
+  background: var(--color-forest);
+  border-color: var(--color-forest);
+  color: #fff;
+}
+
+.contact-action-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  color: var(--color-forest);
+}
+
+.contact-action--primary .contact-action-icon {
+  background: var(--color-dandelion);
+}
+
+.contact-action-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-action-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.contact-action-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.contact-action-detail {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  overflow-wrap: anywhere;
+}
+
+.contact-action-arrow {
+  flex-shrink: 0;
+  display: inline-flex;
+  transition: transform 0.2s ease;
+}
+
+.contact-action-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-action:hover .contact-action-arrow {
+  transform: translateX(4px);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: var(--space-8);
+  align-items: stretch;
+}
+
+.contact-title {
+  margin: 0 0 var(--space-6);
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(2rem, 1.5rem + 1.5vw, 2.75rem);
+  line-height: 1.2;
+  color: var(--color-forest);
+}
+
+.contact-block {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.contact-block + .contact-block {
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-forest) 10%, var(--color-bg));
+  color: var(--color-forest);
+}
+
+.contact-icon--accent {
+  background: color-mix(in srgb, var(--color-dandelion) 25%, var(--color-bg));
+  color: var(--color-dandelion-dark);
+}
+
+.contact-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-label {
+  margin: var(--space-1) 0 var(--space-2);
+  font-size: 1.05rem;
+  color: var(--color-forest);
+}
+
+.contact-block p {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.contact-visiting {
+  list-style: none;
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+.contact-visiting strong {
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+.contact-block .contact-note {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.contact-note a {
+  color: var(--color-sky);
+  font-weight: 500;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-note a:hover {
+  text-decoration: underline;
+}
+
+.contact-map {
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  min-height: 380px;
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 1100px) {
+  .contact-action {
+    gap: var(--space-3);
+    padding: var(--space-4);
+  }
+
+  .contact-action-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-action-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
+  }
+
+  .contact-map {
+    min-height: 300px;
+  }
+}

@@ -24,7 +24,8 @@ function Footer() {
     <footer className="footer">
       <div className="footer-inner container">
         <div className="footer-brand">
-          <p className="footer-name">{site.name}</p>
+          <span className="footer-logo" role="img" aria-label={site.name} />
+          <p className="footer-slogan">{site.slogan}</p>
           <p className="footer-tagline">{site.tagline}</p>
         </div>
 
