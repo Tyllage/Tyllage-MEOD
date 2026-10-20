@@ -1,0 +1,197 @@
+.booking {
+  background: var(--color-bg-alt);
+  padding-block: calc(var(--section-padding) * 1.5);
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: calc(var(--space-8) * 1.5);
+  align-items: start;
+}
+
+.booking-eyebrow {
+  margin: 0 0 var(--space-3);
+  color: var(--color-dandelion-dark);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.booking-title {
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(2rem, 1.5rem + 1.5vw, 2.75rem);
+  line-height: 1.2;
+  color: var(--color-forest);
+}
+
+.booking-lead {
+  margin: 0;
+  max-width: 45ch;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.booking-contacts {
+  list-style: none;
+  margin: var(--space-8) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.booking-contacts li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.booking-contacts li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  color: var(--color-text);
+}
+
+.booking-contact-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  color: var(--color-forest);
+}
+
+.booking-contact-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.booking-contact-label {
+  font-weight: 700;
+  color: var(--color-forest);
+}
+
+.booking-contacts a {
+  color: var(--color-sky);
+  font-weight: 500;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.booking-contacts a:hover {
+  text-decoration: underline;
+}
+
+
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  padding: var(--space-8);
+  border-radius: calc(var(--radius) * 1.5);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 20px 40px color-mix(in srgb, var(--color-forest) 10%, transparent);
+}
+
+.booking-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.booking-field--full {
+  grid-column: 1 / -1;
+}
+
+.booking-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-forest);
+}
+
+.booking-field input,
+.booking-field select,
+.booking-field textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.booking-field textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.booking-field input::placeholder,
+.booking-field textarea::placeholder {
+  color: #9aa396;
+}
+
+.booking-field input:focus,
+.booking-field select:focus,
+.booking-field textarea:focus {
+  outline: none;
+  border-color: var(--color-forest);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-forest) 15%, transparent);
+}
+
+.booking-submit {
+  grid-column: 1 / -1;
+  margin-top: var(--space-2);
+  padding: var(--space-4);
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-forest);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.booking-submit:hover {
+  background: color-mix(in srgb, var(--color-forest) 85%, #000);
+  transform: translateY(-1px);
+}
+
+.booking-sent {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--color-dandelion) 25%, var(--color-bg));
+  color: var(--color-forest);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 560px) {
+  .booking-form {
+    grid-template-columns: 1fr;
+    padding: var(--space-6) var(--space-5);
+  }
+}
