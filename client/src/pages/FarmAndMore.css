@@ -1,0 +1,19 @@
+.farm-page {
+  --section-padding: 96px;
+}
+
+.farm-page .section-intro {
+  margin-top: var(--space-5);
+}
+
+@media (max-width: 900px) {
+  .farm-page {
+    --section-padding: 72px;
+  }
+}
+
+@media (max-width: 640px) {
+  .farm-page {
+    --section-padding: 56px;
+  }
+}
