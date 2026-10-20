@@ -15,9 +15,12 @@ export const site = {
     { label: 'General Visitation', value: 'By Appointment Only' },
     { label: 'Farm Marketplace', value: 'By Appointment Only' },
   ],
-  // From meodfresh.com — confirm with MEOD before launch
+  // Confirmed from the meodfresh.com shipping policy (Oct 2026)
   delivery: {
     freeOver: '$60',
+    fee: '$10',
+    freeOverAmount: 60,
+    feeAmount: 10,
     days: 'Tue, Thu & Sat',
   },
 }
@@ -42,6 +45,8 @@ export const socials = [
   { label: 'Facebook', url: 'https://www.facebook.com/MeodFarm/' },
 ]
 
-export const whatsappUrl = `https://wa.me/${site.phone.replace(/\D/g, '')}?text=${encodeURIComponent(
-  site.whatsappMessage,
-)}`
+export function whatsappLink(message) {
+  return `https://wa.me/${site.phone.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`
+}
+
+export const whatsappUrl = whatsappLink(site.whatsappMessage)

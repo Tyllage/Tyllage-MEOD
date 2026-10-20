@@ -3,6 +3,7 @@ import WhatWeDo from '../components/home/WhatWeDo.jsx'
 import OurPromise from '../components/home/OurPromise.jsx'
 import PopularProducts from '../components/home/PopularProducts.jsx'
 import WhereToBuy from '../components/home/WhereToBuy.jsx'
+import GroupBuy from '../components/home/GroupBuy.jsx'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <OurPromise />
       <PopularProducts />
       <WhereToBuy />
+      <GroupBuy />
     </>
   )
 }
