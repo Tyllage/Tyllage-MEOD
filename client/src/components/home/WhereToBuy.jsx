@@ -86,7 +86,7 @@ function WhereToBuy() {
         </div>
 
         <p className="wheretobuy-footer">
-          <Link className="wheretobuy-contact" to="/find-us">
+          <Link className="wheretobuy-contact" to="/contact">
             Corporate events or partnerships? Get in touch →
           </Link>
         </p>
