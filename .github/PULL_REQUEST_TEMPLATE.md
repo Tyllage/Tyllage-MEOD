@@ -1,3 +1,5 @@
+<!-- Tyllage team members only. Pull requests from outside the Tyllage team are closed without review. See CONTRIBUTING.md and LICENSE. -->
+
 ## Summary
 
 <!-- What does this PR change, and why? Link the issue: Closes #123 -->

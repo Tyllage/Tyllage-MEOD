@@ -6,6 +6,8 @@ labels: bug
 assignees: ""
 ---
 
+<!-- Issues are for the Tyllage team. Tyllage is proprietary and does not accept outside contributions; see CONTRIBUTING.md. -->
+
 > ⚠️ Security issue or exposed data? Don't file it here. See [SECURITY.md](../../SECURITY.md).
 
 **What happened**

@@ -8,6 +8,7 @@ Tyllage will handle MEOD Farm business data and, once the pilot goes live, custo
 | --- | --- |
 | `main` (deployed to Railway) | ✅ |
 | Other branches | ❌ |
+| Forks and copies of this repository | ❌ Not authorised. See [LICENSE](LICENSE). |
 
 ## Reporting a vulnerability
 
@@ -17,6 +18,12 @@ Tyllage will handle MEOD Farm business data and, once the pilot goes live, custo
 - contact the Tyllage maintainers directly.
 
 Include what is affected, steps to reproduce and the possible impact. We aim to acknowledge reports within **3 working days**.
+
+## Unauthorised copies and forks
+
+This repository is proprietary. Tyllage does not support, and has not authorised, any deployment, fork or copy of this code outside the Tyllage team. Vulnerabilities found only in someone else's copy are out of scope. If you find Tyllage code being used or hosted without permission, please tell us through the same private reporting channel.
+
+Reporting a vulnerability or doing good-faith security research does not grant any licence to copy, use, modify or redistribute Tyllage code.
 
 ## If secrets or customer data are exposed
 
