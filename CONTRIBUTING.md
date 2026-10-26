@@ -1,9 +1,19 @@
 # Contributing to Tyllage — MEOD Farm
 
-Thanks for helping. This is a pilot project for a real business, so please read this and the [Code of Conduct](CODE_OF_CONDUCT.md) before you start.
+> **Tyllage does not accept outside contributions.**
+> This repository is proprietary and is maintained only by the Tyllage team. Pull requests, patches and feature work from anyone outside the team will be closed without review. Forking or copying this repository does not give you any right to use, run, modify or redistribute the code. See [LICENSE](LICENSE).
+
+If you are not a member of the Tyllage team:
+
+- **Found a security problem?** Report it privately as described in [SECURITY.md](SECURITY.md). Do not open a public issue.
+- **Interested in licensing, a pilot or a partnership?** Contact the team through the [Tyllage GitHub organisation](https://github.com/Tyllage).
+
+The rest of this guide is for **Tyllage team members** only. This is a pilot project for a real business, so please read this and the [Code of Conduct](CODE_OF_CONDUCT.md) before you start.
 
 ## Ground rules
 
+- **Ownership.** All work you do on this repository belongs to Tyllage LLP and is covered by the [Tyllage Proprietary License](LICENSE). You also agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+- **No copying out.** Do not copy Tyllage code into personal projects, other repositories or public places (gists, forums, AI chat tools that keep your data) without approval.
 - **No real customer data.** Use synthetic fixtures only. Never commit real names, phone numbers, addresses or order records, including in screenshots.
 - **No secrets in git.** API keys and tokens belong in `.env` (git-ignored) locally and in Railway Variables in production. See [SECURITY.md](SECURITY.md).
 - **AI never owns money or stock.** Prices, discounts, commissions and stock must come from deterministic server code or Shopify, never from model output. See the [Product Specification](docs/PRODUCT_SPECIFICATION.md).

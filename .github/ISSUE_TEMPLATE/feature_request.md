@@ -6,6 +6,8 @@ labels: enhancement
 assignees: ""
 ---
 
+<!-- Issues are for the Tyllage team. Tyllage is proprietary and does not accept outside contributions; see CONTRIBUTING.md. -->
+
 **Module**
 
 <!-- Website / SalesDesk / Sync / Assist / Recommend / Campaign Studio / GroupBuy / Growth Insights / Other -->

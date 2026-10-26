@@ -3,6 +3,9 @@
 > **AI-powered sales, customer engagement and group-buy operations for MEOD Farm.**
 > Problem Statement 6B: *Improving Sales and Marketing Outreach Through AI* (Agriculture / AgriTech / eCommerce).
 
+> **Proprietary software. © 2026 Tyllage LLP. All rights reserved.**
+> This repository is not open source. Being able to see it on GitHub does not give you permission to copy, use, run, modify, deploy or redistribute any part of it. Outside contributions are not accepted. See [LICENSE](LICENSE).
+
 Tyllage is a sales and marketing operations layer for [MEOD Farm](https://meod.com.sg/) and its [MEOD Fresh](https://meodfresh.com/) Shopify store. It is meant to sit **alongside** the store, not replace it. The goal is to ease MEOD's marketing manpower bottleneck and lift repeat purchases with:
 
 - live catalogue and stock visibility,
@@ -24,7 +27,7 @@ Tyllage is a sales and marketing operations layer for [MEOD Farm](https://meod.c
 - [Project documents](#project-documents)
 - [Contributing](#contributing)
 - [Security](#security)
-- [License](#license)
+- [License and ownership](#license-and-ownership)
 
 ## What's in this repo
 
@@ -115,13 +118,22 @@ Future backend variables (`DATABASE_URL`, `SHOPIFY_*`, `WHATSAPP_*`, `OPENAI_*`,
 
 ## Contributing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md) first.
+Tyllage does not accept outside contributions. Pull requests from anyone outside the Tyllage team are closed without review.
+
+Tyllage team members: read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md) first.
 
 ## Security
 
 Do not open public issues for vulnerabilities or data exposure. See [SECURITY.md](SECURITY.md).
 
-## License
+## License and ownership
 
-Copyright © 2026 Tyllage. All rights reserved. See [LICENSE](LICENSE).
+© 2026 Tyllage LLP. All rights reserved.
+
+Tyllage, including its code, designs, business rules and documentation, is proprietary to Tyllage LLP and is shared under the [Tyllage Proprietary License](LICENSE). No licence is granted to use, copy, modify, deploy or redistribute it without Tyllage's prior written permission. GitHub's Terms of Service let you view and fork public repositories on GitHub; that does not give any further right to use this code.
+
 MEOD Farm and MEOD Fresh names, content and branding belong to MEOD.
+
+Third-party open-source packages used by Tyllage remain under their own licences.
+
+For licensing or partnership enquiries, contact the team through the [Tyllage GitHub organisation](https://github.com/Tyllage).

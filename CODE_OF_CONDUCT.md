@@ -2,7 +2,7 @@
 
 ## Our pledge
 
-We, the Tyllage contributors, pledge to make working on this project a harassment-free experience for everyone. This applies regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, education, nationality, personal appearance, race, religion, or sexual identity and orientation.
+Tyllage is a proprietary project maintained by the Tyllage team; it does not accept outside contributions (see [CONTRIBUTING.md](CONTRIBUTING.md)). We, the Tyllage team, pledge to make working on this project a harassment-free experience for everyone. This applies regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, education, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 ## Our standards
 
@@ -24,7 +24,7 @@ Unacceptable behaviour includes:
 
 ## Scope
 
-This Code applies in all project spaces: GitHub, team chats, meetings, and any time you represent the project, for example when working with MEOD.
+This Code applies to Tyllage team members in all project spaces: GitHub, team chats, meetings, and any time you represent the project, for example when working with MEOD. It also applies to anyone who interacts with those spaces.
 
 ## Enforcement
 

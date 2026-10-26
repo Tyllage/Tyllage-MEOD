@@ -6,3 +6,6 @@ contact_links:
   - name: MEOD Fresh store (customer orders)
     url: https://meodfresh.com/
     about: For MEOD product or order questions, contact MEOD directly.
+  - name: Licensing and partnership enquiries
+    url: https://github.com/Tyllage
+    about: Tyllage is proprietary software. Contact the Tyllage team for permission to use it.
